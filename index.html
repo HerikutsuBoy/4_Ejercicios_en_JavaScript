@@ -76,7 +76,7 @@
 
   <script>
     // ---------- EJERCICIO 1 ----------
-    function repartirCamellos() {
+function repartirCamellos() {
   let base = parseInt(document.getElementById("camellos").value);
   let total = base + 1; // se añade el camello de Beremiz
 
@@ -88,11 +88,11 @@
 
   document.getElementById("res1").textContent =
     "Total con el camello de Beremiz: " + total + "\n" +
-    "Hermano mayor (1/2): " + mayor.toFixed(2) + "\n" +
-    "Hermano mediano (1/3): " + mediano.toFixed(2) + "\n" +
-    "Hermano menor (1/9): " + menor.toFixed(2) + "\n" +
-    "Total repartido: " + repartido.toFixed(2) + "\n" +
-    "Sobran: " + sobran.toFixed(2) + " (1 es de Beremiz y el otro es la ganancia)";
+    "Hermano mayor (1/2): " + mayor.toFixed(0) + "\n" +
+    "Hermano mediano (1/3): " + mediano.toFixed(0) + "\n" +
+    "Hermano menor (1/9): " + menor.toFixed(0) + "\n" +
+    "Total repartido: " + repartido.toFixed(0) + "\n" +
+    "Sobran: " + sobran.toFixed(0) + " (1 es de Beremiz y el otro es la ganancia)";
 }
 
     // ---------- EJERCICIO 2 ----------
