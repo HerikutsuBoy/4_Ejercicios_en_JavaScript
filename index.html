@@ -77,23 +77,23 @@
   <script>
     // ---------- EJERCICIO 1 ----------
     function repartirCamellos() {
-      let base = parseInt(document.getElementById("camellos").value);
-      let total = base + 1; // se añade el camello de Beremiz
+  let base = parseInt(document.getElementById("camellos").value);
+  let total = base + 1; // se añade el camello de Beremiz
 
-      let mayor = total / 2;
-      let mediano = total / 3;
-      let menor = total / 9;
-      let repartido = mayor + mediano + menor;
-      let sobran = total - repartido;
+  let mayor = total / 2;
+  let mediano = total / 3;
+  let menor = total / 9;
+  let repartido = mayor + mediano + menor;
+  let sobran = total - repartido;
 
-      document.getElementById("res1").textContent =
-        "Total con el camello de Beremiz: " + total + "\n" +
-        "Hermano mayor (1/2): " + mayor + "\n" +
-        "Hermano mediano (1/3): " + mediano + "\n" +
-        "Hermano menor (1/9): " + menor + "\n" +
-        "Total repartido: " + repartido + "\n" +
-        "Sobran: " + sobran + " (1 es de Beremiz y el otro es la ganancia)";
-    }
+  document.getElementById("res1").textContent =
+    "Total con el camello de Beremiz: " + total + "\n" +
+    "Hermano mayor (1/2): " + mayor.toFixed(2) + "\n" +
+    "Hermano mediano (1/3): " + mediano.toFixed(2) + "\n" +
+    "Hermano menor (1/9): " + menor.toFixed(2) + "\n" +
+    "Total repartido: " + repartido.toFixed(2) + "\n" +
+    "Sobran: " + sobran.toFixed(2) + " (1 es de Beremiz y el otro es la ganancia)";
+}
 
     // ---------- EJERCICIO 2 ----------
     function calcularVenta() {
